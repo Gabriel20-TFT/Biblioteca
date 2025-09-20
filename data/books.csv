@@ -1,0 +1,51 @@
+id,title,author_id,price,available
+1,Luceafărul,1,37.56,True
+2,Amintiri din copilărie,2,43.59,True
+3,Noaptea de Sânziene,3,50.48,True
+4,Norwegian Wood,4,12.5,True
+5,Harry Potter and the Philosopher's Stone,5,16.29,True
+6,1984,6,45.14,True
+7,Crime and Punishment,7,28.46,True
+8,War and Peace,8,68.66,True
+9,The Trial,9,43.04,True
+10,The Stranger,10,62.69,True
+11,The Name of the Rose,11,11.17,True
+12,One Hundred Years of Solitude,12,49.87,True
+13,Pride and Prejudice,13,13.67,True
+14,Great Expectations,14,47.87,True
+15,Adventures of Huckleberry Finn,15,10.43,True
+16,The Old Man and the Sea,16,48.68,True
+17,The Great Gatsby,17,42.98,True
+18,Mrs Dalloway,18,43.23,True
+19,In Search of Lost Time,19,62.49,True
+20,Moby-Dick,20,67.07,True
+21,The Lord of the Rings,21,53.16,True
+22,Foundation,22,21.29,True
+23,Sherlock Holmes: Selected Stories,23,21.55,True
+24,The Tell-Tale Heart,24,11.76,True
+25,The Picture of Dorian Gray,25,44.33,True
+26,Brave New World,26,32.24,True
+27,Beloved,27,53.5,True
+28,Slaughterhouse-Five,28,68.21,True
+29,Midnight's Children,29,30.14,True
+30,The House of the Spirits,30,31.66,True
+31,Lolita,31,59.65,True
+32,Frankenstein,32,27.87,True
+33,Dracula,33,30.01,True
+34,Alice's Adventures in Wonderland,34,22.66,True
+35,Madame Bovary,35,67.97,True
+36,Les Misérables,36,38.34,True
+37,One Day in the Life of Ivan Denisovich,37,61.25,True
+38,Zorba the Greek,38,69.39,True
+39,Either/Or,39,63.45,True
+40,The Alchemist,40,31.96,True
+41,The Chronicles of Narnia,41,43.81,True
+42,The Iliad,42,36.73,True
+43,The Divine Comedy,43,24.99,True
+44,The Grapes of Wrath,44,38.94,True
+45,The Man in the High Castle,45,66.99,True
+46,The Catcher in the Rye,46,61.0,True
+47,The Shining,47,18.36,True
+48,Murder on the Orient Express,48,33.26,True
+49,The Prime of Miss Jean Brodie,49,61.33,True
+50,Selected Stories of Muriel Spark,50,35.28,True
