@@ -15,4 +15,4 @@ class BookResponse(BaseModel):
     price: Decimal
     available: int
     class Config:
-        orm_mode = True
+        om_attribute = True

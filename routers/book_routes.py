@@ -14,7 +14,7 @@ def list_books(db: Session = Depends(get_db)):
 
 @router.post("/add", response_model=BookResponse, status_code=201)
 def add_book(b: BookCreate, db: Session = Depends(get_db)):
-    # verify author exists
+
     author = db.query(Author).filter(Author.author_id == b.author_id).first()
     if not author:
         raise HTTPException(status_code=404, detail="Author not found")

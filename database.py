@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
 
-DATABASE_URL = "mysql+mysqlconnector://root:Mefistofel03@@localhost:3306/biblioteca"
+DATABASE_URL = "mysql+pymysql://root:Mefistofel03%40@localhost:3306/biblioteca"
 
 engine = create_engine(DATABASE_URL, pool_pre_ping=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
@@ -15,3 +15,4 @@ def get_db():
         yield db
     finally:
         db.close()
+

@@ -13,4 +13,4 @@ class LoanResponse(BaseModel):
     loan_date: date
     return_date: Optional[date] = None
     class Config:
-        orm_mode = True
+        from_attribute = True

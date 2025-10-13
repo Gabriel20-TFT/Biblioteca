@@ -15,5 +15,5 @@ def top_books(db: Session = Depends(get_db)):
              .order_by(desc("times"))
              .limit(5)
              .all())
-    # return list of dicts
+
     return [{"book_id": r.book_id, "title": r.title, "times": int(r.times)} for r in res]
