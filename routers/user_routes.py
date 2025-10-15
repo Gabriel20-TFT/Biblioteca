@@ -10,6 +10,7 @@ router = APIRouter(prefix="/users", tags=["users"])
 
 @router.post("/register", response_model=UserResponse, status_code=201)
 def register(user_in: UserCreate, db: Session = Depends(get_db)):
+    print(user_in)
     user = User(username=user_in.username, email=user_in.email, hashed_password=hash_password(user_in.password))
     try:
         db.add(user)
