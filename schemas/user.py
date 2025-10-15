@@ -3,7 +3,7 @@ from typing import Optional
 
 class UserBase(BaseModel):
     username: str
-    email: Optional[EmailStr] = None
+    email: EmailStr = None
 
 class UserCreate(UserBase):
     password: str

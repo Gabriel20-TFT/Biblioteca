@@ -24,7 +24,7 @@ class LoanService:
         }
         loans.append(new_loan)
         FileHandler.write_csv(LOANS_FILE, loans, fieldnames=["id","book_id","user_id","loan_date","return_date"])
-        # mark book unavailable
+
         books = FileHandler.read_csv(BOOKS_FILE)
         for b in books:
             if int(b.get("id")) == int(book_id):
@@ -39,7 +39,7 @@ class LoanService:
             if int(l.get("book_id")) == int(book_id) and l.get("return_date","") == "":
                 l["return_date"] = date.today().isoformat()
                 FileHandler.write_csv(LOANS_FILE, loans, fieldnames=["id","book_id","user_id","loan_date","return_date"])
-                # mark book available
+
                 books = FileHandler.read_csv(BOOKS_FILE)
                 for b in books:
                     if int(b.get("id")) == int(book_id):

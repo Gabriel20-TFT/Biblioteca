@@ -19,14 +19,14 @@ def borrow(book_id: int, payload: LoanRequest, db: Session = Depends(get_db)):
     if not verify_password(payload.password, user.hashed_password):
         raise HTTPException(status_code=401, detail="Authentication failed")
 
-    # check book
+
     book = db.query(Book).filter(Book.book_id == book_id).first()
     if not book:
         raise HTTPException(status_code=404, detail="Book not found")
     if book.available != 1:
         raise HTTPException(status_code=400, detail="Book is not available")
 
-    # create loan and mark book unavailable
+
     loan = Loan(user_id=user.user_id, book_id=book.book_id, loan_date=date.today())
     try:
         db.add(loan)
@@ -56,7 +56,7 @@ def return_book(book_id: int, payload: LoanRequest, db: Session = Depends(get_db
 
     try:
         loan.return_date = date.today()
-        # mark book available
+
         book = db.query(Book).filter(Book.book_id == book_id).first()
         if book:
             book.available = 1

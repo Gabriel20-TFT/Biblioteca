@@ -20,6 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -37,6 +40,7 @@
     "Python.book_routes.executor": "Run",
     "Python.database.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.security.executor": "Run",
     "Python.test_db.executor": "Run",
     "Python.user_routes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -63,5 +67,15 @@
       <updated>1760201157656</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/schemas/user.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
